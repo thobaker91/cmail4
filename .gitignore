@@ -1,0 +1,8 @@
+node_modules
+.wrangler
+.dev.vars
+_dist
+_check.png
+*.log
+
+dist-worker/

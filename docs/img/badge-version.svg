@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="162" height="28" role="img" aria-label="version: v3.0.1">
+  <clipPath id="r"><rect width="162" height="28" rx="8"/></clipPath>
+  <g clip-path="url(#r)">
+    <rect width="162" height="28" fill="#0b0f14"/>
+    <rect width="92" height="28" fill="#2f9e63"/>
+  </g>
+  <text x="16" y="18.5" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="700" fill="#e8f5ec">version</text>
+  <text x="104" y="18.5" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e9efeb">v3.0.1</text>
+</svg>

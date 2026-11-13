@@ -1,0 +1,35 @@
+// Cmail — Cloudflare Workers configuration
+// deploy.sh fills <D1_ID> automatically during installation.
+//
+// NOTE: there is intentionally NO "assets" block here. The worker embeds
+// every UI file inside itself (scripts/build-worker.mjs), so the whole app
+// is ONE file: paste worker.js in the dashboard editor, add a single D1
+// binding named DB, done.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cmail4",
+  "main": "src/worker.ts",
+  "compatibility_date": "2024-11-01",
+  "workers_dev": true,
+
+  "vars": {
+    "APP_VERSION": "3.0.1"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cmail-db",
+      "database_id": "eaf1f8ad-6d7b-4883-9cf9-a3d30bd97c34"
+    }
+  ],
+
+  "triggers": {
+    // hourly cleanup: expire temporary addresses & purge old mail
+    "crons": ["17 * * * *"]
+  },
+
+  "observability": {
+    "enabled": true
+  }
+}

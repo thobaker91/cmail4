@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark" data-accent="green">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Cmail — ایمیل روی Cloudflare خودت</title>
+  <meta name="description" content="Cmail — پلتفرم ایمیل روی Cloudflare: ایمیل موقت و دائمی، یادداشت‌گذاری روی ایمیل‌ها، گاوصندوق کدهای 2FA و پشتیبانی چند دامنه." />
+  <meta name="theme-color" content="#141a15" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- the two webfonts start loading with the HTML itself — when the CSS
+       lands the fonts are already (almost) there, so text never reflows
+       from the fallback into the real face (the “page jump” on slow devices) -->
+  <link rel="preload" href="assets/fonts/Vazirmatn-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/DMSans-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/app.css?v=__CM_VER__" />
+</head>
+<body>
+  <!-- the ambient stage behind everything (mood-tinted, three presence modes) -->
+  <div class="bg-stage" aria-hidden="true"><i></i><b></b><div class="grain"></div><div class="vig"></div></div>
+
+  <!-- floating pill navigation — brand · pages · search / theme / language / account -->
+  <header class="pillbar" id="pillbar" hidden>
+    <a class="pillbar__brand" href="#/mail">
+      <img class="pillbar__logo" src="assets/img/icon-white.png" alt="Cmail" />
+      <span class="pillbar__name">Cmail</span>
+      <span class="pillbar__ver" id="pb-ver">3.0</span>
+    </a>
+    <nav class="pillbar__nav" id="pb-nav" aria-label="main"></nav>
+    <div class="pillbar__end" id="pb-end"></div>
+  </header>
+
+  <!-- serious system issues surface here, right under the navigation (admin only) -->
+  <div class="sysalert-wrap" id="sysalert" hidden></div>
+
+  <main class="view" id="app" aria-live="polite"></main>
+
+  <!-- mobile tabbar -->
+  <nav class="tabbar" id="tabbar" hidden><div class="tabbar__in" id="tabbar-in"></div></nav>
+
+  <!-- overlays -->
+  <div class="toasts" id="toasts" aria-live="assertive"></div>
+  <div class="modal-root" id="modals"></div>
+
+  <script type="module" src="assets/js/app.js?v=__CM_VER__"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Cmail">
+  <defs>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9be3b4"><animate attributeName="stop-color" values="#9be3b4;#8ec9e8;#c2a7e2;#9be3b4" dur="9s" repeatCount="indefinite"/></stop>
+      <stop offset="0.55" stop-color="#8ec9e8"><animate attributeName="stop-color" values="#8ec9e8;#c2a7e2;#9be3b4;#8ec9e8" dur="9s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#8fd0a5"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.16" cy="0.2" r="0.55">
+      <stop offset="0" stop-color="#4f8f60" stop-opacity="0.34"><animate attributeName="stop-opacity" values="0.34;0.5;0.34" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#4f8f60" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.88" cy="0.85" r="0.6">
+      <stop offset="0" stop-color="#2f7fb0" stop-opacity="0.3"><animate attributeName="stop-opacity" values="0.3;0.46;0.3" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#2f7fb0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="420" rx="26" fill="#0b0f14"/>
+  <rect width="1200" height="420" rx="26" fill="url(#glowA)"/>
+  <rect width="1200" height="420" rx="26" fill="url(#glowB)"/>
+  <rect x="1" y="1" width="1198" height="418" rx="25" fill="none" stroke="#ffffff" stroke-opacity="0.1"/>
+
+  <!-- brand -->
+  <g>
+    <circle cx="1136" cy="76" r="21" fill="none" stroke="url(#shine)" stroke-width="2.5">
+      <animate attributeName="r" values="21;22.5;21" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1136" cy="76" r="9" fill="url(#shine)">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1100" y="84" font-family="Segoe UI, system-ui, sans-serif" font-size="30" font-weight="800" fill="url(#shine)" text-anchor="end">Cmail</text>
+  </g>
+
+  <!-- headline -->
+  <text x="1136" y="158" font-family="Vazirmatn, Tahoma, sans-serif" font-size="13.5" font-weight="700" letter-spacing="3" fill="#7fae8f" text-anchor="start" direction="rtl">ایمیلت، قانونش را خودت می‌گذاری</text>
+  <text x="1136" y="210" font-family="Vazirmatn, Tahoma, sans-serif" font-size="25" font-weight="800" fill="#f2f7f3" text-anchor="start" direction="rtl">یک دنیای کامل ایمیل روی Cloudflare خودت —</text>
+  <text x="1136" y="250" font-family="Vazirmatn, Tahoma, sans-serif" font-size="25" font-weight="800" fill="#f2f7f3" text-anchor="start" direction="rtl">صندوق موقت، آدرس دائمی، یادداشت‌ها و گاوصندوق 2FA.</text>
+
+  <!-- inbox card -->
+  <g>
+    <rect x="96" y="96" width="330" height="272" rx="20" fill="url(#cardbg)" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="392" y="131" font-family="Vazirmatn, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#ffffff" fill-opacity="0.55" text-anchor="start" direction="rtl">صندوق</text>
+    <circle cx="126" cy="126" r="5" fill="#8fd0a5">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="120" y1="146" x2="402" y2="146" stroke="#ffffff" stroke-opacity="0.08"/>
+    
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.86;1" dur="7.2s" begin="0.9s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 14;0 0;0 0;0 -6" keyTimes="0;0.12;0.86;1" dur="7.2s" begin="0.9s" repeatCount="indefinite"/>
+      <circle cx="378" cy="156" r="17" fill="#c9a26a" opacity="0.92"/>
+      <text x="378" y="161" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#0c1116" text-anchor="middle">س</text>
+      <text x="340" y="154" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15.5" font-weight="700" fill="#eef4f0" text-anchor="start" direction="rtl">هشدار امنیتی</text>
+      <text x="340" y="173" font-family="Vazirmatn, Tahoma, sans-serif" font-size="12.5" fill="#93a39b" text-anchor="start" direction="rtl">ورود جدید به حسابت</text>
+      <circle cx="122" cy="156" r="4" fill="#8fd0a5"/>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.86;1" dur="7.2s" begin="1.4500000000000002s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 14;0 0;0 0;0 -6" keyTimes="0;0.12;0.86;1" dur="7.2s" begin="1.4500000000000002s" repeatCount="indefinite"/>
+      <circle cx="378" cy="226" r="17" fill="#7fa5d9" opacity="0.92"/>
+      <text x="378" y="231" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#0c1116" text-anchor="middle">ل</text>
+      <text x="340" y="224" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15.5" font-weight="700" fill="#eef4f0" text-anchor="start" direction="rtl">لینوکس‌مگ</text>
+      <text x="340" y="243" font-family="Vazirmatn, Tahoma, sans-serif" font-size="12.5" fill="#93a39b" text-anchor="start" direction="rtl">خلاصهٔ هفته: هستهٔ ۶٫۱۲ منتشر شد</text>
+      <circle cx="122" cy="226" r="4" fill="#8fd0a5"/>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.86;1" dur="7.2s" begin="2.0s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 14;0 0;0 0;0 -6" keyTimes="0;0.12;0.86;1" dur="7.2s" begin="2.0s" repeatCount="indefinite"/>
+      <circle cx="378" cy="296" r="17" fill="#b98fd4" opacity="0.92"/>
+      <text x="378" y="301" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#0c1116" text-anchor="middle">پ</text>
+      <text x="340" y="294" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15.5" font-weight="700" fill="#eef4f0" text-anchor="start" direction="rtl">درگاه پرداخت</text>
+      <text x="340" y="313" font-family="Vazirmatn, Tahoma, sans-serif" font-size="12.5" fill="#93a39b" text-anchor="start" direction="rtl">رسید #۸۸۴۲ — پرداخت موفق</text>
+      <circle cx="122" cy="296" r="4" fill="#8fd0a5"/>
+    </g>
+  </g>
+
+  <!-- feature chip -->
+  <g>
+    <rect x="666" y="304" width="470" height="40" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="1112" cy="324" r="4.5" fill="#9be3b4">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1096" y="329" font-family="Vazirmatn, Tahoma, sans-serif" font-size="14.5" font-weight="600" fill="#cfe0d4" text-anchor="start" direction="rtl">نسخهٔ ۲.۹ — صندوق نو با ساختار بزرگ‌سال‌ها · بیضی هویت با کپی آدرس · همهٔ نامه‌ها در یک کارت</text>
+  </g>
+</svg>
